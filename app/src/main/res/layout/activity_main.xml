@@ -27,6 +27,7 @@
         android:layout_marginTop="23dp"
         android:ems="10"
         android:hint="Name"
+        android:autofillHints="Name"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -39,6 +40,7 @@
         android:layout_marginTop="3dp"
         android:ems="10"
         android:hint="Confirm Password"
+        android:autofillHints="Confirm Password"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextPassword" />
@@ -52,6 +54,7 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:autofillHints="Password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextEmail" />
 
@@ -61,10 +64,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:layout_marginTop="4dp"
+        android:autofillHints="Email"
         android:ems="10"
         android:hint="Email"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextName" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="32dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextConfirmPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
