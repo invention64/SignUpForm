@@ -35,7 +35,7 @@ class FormActivity : AppCompatActivity() {
             return false
         }
 
-        Toast.makeText(applicationContext, "Welcome, ${nameText.text}, to the SignUpFormApp", Toast.LENGTH_SHORT)
+        Toast.makeText(applicationContext, "Welcome, ${nameText.text}, to the SignUpFormApp", Toast.LENGTH_SHORT).show()
         return true
     }
 }
