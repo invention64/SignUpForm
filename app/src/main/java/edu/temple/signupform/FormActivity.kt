@@ -30,7 +30,7 @@ class FormActivity : AppCompatActivity() {
             passwordText.error = "Password must not be empty"
             return false
         }
-        if (confirmText.text.equals(passwordText.text)){
+        if (confirmText.text.trim() != passwordText.text.trim()){
             confirmText.error = "Passwords must match"
             return false
         }
